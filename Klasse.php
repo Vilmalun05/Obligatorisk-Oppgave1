@@ -2,7 +2,7 @@
 
 $db=myqli_connect ("b-studentsql-1.usn.no", "vilun2545", "0732vilun2545", "vilun2545");
 
-$sqlSetning = "SELECT * FROM student";
+$sqlSetning = "SELECT * FROM Klasse";
 $sqlResultat=mysqli_query($db,$sqlSetning);
 
 $antallRader=mysqli_num_rows($sqlResultat);
