@@ -8,15 +8,15 @@ $db = mysqli_connect(
 );
 
 
-$sqlSetning = "SELECT * FROM klasse";
+$sqlsetning = "SELECT * FROM klasse";
 
-$sqlResultat = mysqli_query($db,$sqlSetning);
+$sqlResultat = mysqli_query($db,$sqlsetning);
 
-$antallRader = mysqli_num_rows($sqlResultat);
+$antallrader = mysqli_num_rows($sqlresultat);
 
-for ($i = 1; $i <= $antallRader; $i++) {
+for ($i = 1; $i <= $antallrader; $i++) {
 
-    $rad = mysqli_fetch_array($sqlResultat);
+    $rad = mysqli_fetch_array($sqlresultat);
 
     $brukernavn = $rad["brukernavn"];
     $fornavn = $rad["fornavn"];
