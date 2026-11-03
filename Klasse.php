@@ -23,8 +23,8 @@ for ($i = 1; $i <= $antallrader; $i++) {
     $etternavn = $rad["etternavn"];
     $klassekode = $rad["klassekode"];
 
-    echo "$fornavn $etternavn ($klassekode)<br>";
-    /* print(" $fornavn $etternavn ($klassekode)<br>"); */
+
+    print(" $fornavn $etternavn ($klassekode)<br>");
 }
 
 ?>
