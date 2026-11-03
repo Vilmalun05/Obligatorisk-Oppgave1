@@ -7,7 +7,8 @@ $db = mysqli_connect(
     "vilun2545"
 );
 
-$sqlSetning = "SELECT * FROM Klasse";
+
+$sqlSetning = "SELECT * FROM klasse";
 
 $sqlResultat = mysqli_query($db,$sqlSetning);
 
@@ -23,6 +24,7 @@ for ($i = 1; $i <= $antallRader; $i++) {
     $klassekode = $rad["klassekode"];
 
     echo "$fornavn $etternavn ($klassekode)<br>";
+    /* print(" $fornavn $etternavn ($klassekode)<br>"); */
 }
 
 ?>
