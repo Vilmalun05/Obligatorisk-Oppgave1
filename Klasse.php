@@ -9,7 +9,7 @@ $db = mysqli_connect(
 
 $sqlSetning = "SELECT * FROM Klasse";
 
-$sqlResultat = mysqli_query($db, $sqlSetning);
+$sqlResultat = myqli_query($db, $sqlSetning);
 
 $antallRader = mysqli_num_rows($sqlResultat);
 
