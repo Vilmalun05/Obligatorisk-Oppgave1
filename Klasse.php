@@ -7,7 +7,7 @@ $db = mysqli_connect(
     "vilun2545"
 );
 
-$sqlSetning = "SELECT * FROM klasse";
+$sqlSetning = "SELECT * FROM Klasse";
 
 $sqlResultat = mysqli_query($db, $sqlSetning);
 
