@@ -14,4 +14,6 @@ for ($i=1; $i<=$antallRader; $i++) {
     $etternavn=$rad["etternavn"];
     $klassekode=$rad["klassekode"];
 }
+print ($brukerklasse $fornavn $etternavn $klassekode ");
+
 ?>
