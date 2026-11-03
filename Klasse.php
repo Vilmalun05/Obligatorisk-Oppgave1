@@ -1,19 +1,28 @@
 <?php
 
-$db=myqli_connect ("b-studentsql-1.usn.no", "vilun2545", "0732vilun2545", "vilun2545");
+$db = mysqli_connect(
+    "b-studentsql-1.usn.no",
+    "vilun2545",
+    "0732vilun2545",
+    "vilun2545"
+);
 
 $sqlSetning = "SELECT * FROM Klasse";
-$sqlResultat=mysqli_query($db,$sqlSetning);
-print("klasse er lagt inn i databasen <br>");
-$antallRader=mysqli_num_rows($sqlResultat);
 
-for ($i=1; $i<=$antallRader; $i++) {
-    $rad=mysqli_fetch_row($sqlResultat);
-    $brukerklasse=$rad["brukernavn"];
-    $fornavn=$rad["fornavn"];
-    $etternavn=$rad["etternavn"];
-    $klassekode=$rad["klassekode"];
+$sqlResultat = mysqli_query($db, $sqlSetning);
+
+$antallRader = mysqli_num_rows($sqlResultat);
+
+for ($i = 1; $i <= $antallRader; $i++) {
+
+    $rad = mysqli_fetch_assoc($sqlResultat);
+
+    $brukernavn = $rad["brukernavn"];
+    $fornavn = $rad["fornavn"];
+    $etternavn = $rad["etternavn"];
+    $klassekode = $rad["klassekode"];
+
+    echo "$fornavn $etternavn ($klassekode)<br>";
 }
-
 
 ?>
