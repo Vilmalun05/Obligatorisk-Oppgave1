@@ -24,7 +24,7 @@ for ($i = 1; $i <= $antallrader; $i++) {
     $klassekode = $rad["klassekode"];
 
 
-    print(" $fornavn $etternavn ($klassekode)<br>");
+    print(" $brukernavn $fornavn $etternavn $klassekode ");
 }
 
 ?>
