@@ -1,9 +1,10 @@
 <?php
 
-$db = mysqli_connect("b-studentsql-1.usn.no", "vilun2545", "0732vilun2545", "vilun2545");
+$db=mysqli_connect ("b-studentsql-1.usn.no", "vilun2545", "0732vilun2545", "vilun2545");
 
-$sqlsetning = "SELECT * FROM klasse";
-$sqlResultat = mysqli_query($db,$sqlsetning);
+/*$sqlSetning = "INSERT INTO `klasse`(`brukernavn`, `fornavn`, `etternavn`, `klassekode`) VALUES ('IT1','Informasjonsteknologi 1', 'Student', 'IT1')";*/
+$sqlSetning = "SELECT * FROM klasse";
+$sqlResultat = mysqli_query($db,$sqlSetning);
 
 $antallRader = mysqli_num_rows($sqlResultat);
 
