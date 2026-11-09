@@ -26,9 +26,7 @@ if (isset($_POST["registrerKlasseKnapp"])) {
         mysqli_query($db,$sqlSetning) or die ("ikke mulig å registrere data i databasen");
         print("Følgende klasse er nå registrert: <br> $brukernavn $fornavn $etternavn $klassekode");
     }
-    else if {
-        include("db-kobling.php");
-    }
+    
 
 
 /*$sqlSetning = "INSERT INTO `klasse`(`brukernavn`, `fornavn`, `etternavn`, `klassekode`) VALUES ('IT1','Informasjonsteknologi 1', 'Student', 'IT1')";*/
