@@ -18,7 +18,7 @@ if (isset($_POST["registrerKlasseKnapp"])) {
     $fornavn = $_POST["fornavn"];
     $etternavn = $_POST["etternavn"];
     $klassekode = $_POST["klassekode"];
-
+}
     if (!$brukernavn || !$fornavn || !$etternavn || !$klassekode) {
         print("Alle felt må fylles ut");
     } else {
@@ -26,10 +26,10 @@ if (isset($_POST["registrerKlasseKnapp"])) {
         mysqli_query($db,$sqlSetning) or die ("ikke mulig å registrere data i databasen");
         print("Følgende klasse er nå registrert: <br> $brukernavn $fornavn $etternavn $klassekode");
     }
-    else {
+    else  {
         include("db-kobling.php");
     }
-} 
+
 
 /*$sqlSetning = "INSERT INTO `klasse`(`brukernavn`, `fornavn`, `etternavn`, `klassekode`) VALUES ('IT1','Informasjonsteknologi 1', 'Student', 'IT1')";*/
 $sqlSetning = "SELECT * FROM klasse";
